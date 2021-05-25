@@ -1,0 +1,18 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.arange(-2.00, 2.00, 0.01)
+y1 = x*x
+y2 = x**3
+fig, ax = plt.subplots(figsize=(8,6))
+
+ax.set_title("Graph")
+ax.set_xlabel("X")
+ax.set_ylabel("Y")
+ax.text(-0.8, 0.8, 'y=x**2', rotation=45)
+ax.text(-1.5, -1.1, 'y=x**3', rotation=0)
+
+ax.plot(x, y1)
+ax.plot(x, y2)
+
+plt.show() 
